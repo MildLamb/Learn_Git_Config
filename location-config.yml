@@ -1,5 +1,9 @@
+spring:
+  profiles:
+    active: dev
+---
 server:
-  port: 8001
+  port: 8221
 
 # mybatis配置
 mybatis:
@@ -18,7 +22,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #数据源
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cloud01?useSSL=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/cloud03?useSSL=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: W2kindred
 
