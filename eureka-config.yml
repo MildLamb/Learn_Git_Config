@@ -23,8 +23,9 @@ eureka:
     service-url:  # 服务监控页面
       # 单机：defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #提供者提供服务 来注册的地址
+      defaultZone: http://eureka7001:7001/eureka/
       # 集群需要关联其他集群成员
-      defaultZone: http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+#       defaultZone: http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
       
 ---
 server:
@@ -47,5 +48,6 @@ eureka:
     service-url:  # 服务监控页面
       # 单机：defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #提供者提供服务 来注册的地址
+      defaultZone: http://eureka7001:7001/eureka/
       # 集群需要关联其他集群成员
-      defaultZone: http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+#       defaultZone: http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
