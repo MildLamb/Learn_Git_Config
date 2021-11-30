@@ -1,7 +1,7 @@
 # eureka注册中心的远程配置
 spring:
   profiles:
-    active: dev
+    active:
 ---
 server:
   port: 7001
