@@ -50,7 +50,7 @@ info:
 
 ---
 server:
-  port: 8001
+  port: 8002
 
 # mybatis配置
 mybatis:
