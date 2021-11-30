@@ -38,7 +38,7 @@ spring:
 # Eureka配置
 eureka:
   instance:
-    hostname: eureka7002  # Eureka服务端的实例名称
+    hostname: eureka7001  # Eureka服务端的实例名称
   client:
     # 当我们设置服务为注册中心时，需要关闭eureka.client.fetch-registry与eureka.client.register-with-eureka，
     # 在做注册中心集群的时候，register-with-eureka必须打开，因为需要进行相互注册，不然副本无法可用
@@ -48,4 +48,4 @@ eureka:
       # 单机：defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #提供者提供服务 来注册的地址
       # 集群需要关联其他集群成员
-      defaultZone: http://eureka7001:7001/eureka/,http://eureka7003:7003/eureka/
+      defaultZone: http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
