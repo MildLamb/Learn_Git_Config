@@ -1,5 +1,8 @@
 # Learn_Git_Config
 使用git远程配置
+
+# git 环境搭建
+
 ## git生成SSH公钥命令
 - 在你的C:\Users\MildLamb\.ssh文件夹下，git bash
 - 输入命令
