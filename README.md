@@ -16,20 +16,20 @@ $ ssh-keygen -t rsa -C "1902524390@qq.com"
 - clone后，在对应文件夹中编写一个application.yml文件
 ```yml
 spring:
-    profiles:
-        active: dev
+  profiles:
+    active: dev
 
 ---
 spring:
-    profiles: dev
-    application:
-        name: springcloud-config-dev
+  profiles: dev
+  application:
+    name: springcloud-config-dev
 
 ---
 spring:
-    profiles: test
-    application:
-        name: springcloud-config-test
+  profiles: test
+  application:
+    name: springcloud-config-test
 ```
 - 将编写的yml文件，提交到GitHub
   - 在项目目录中git bash
