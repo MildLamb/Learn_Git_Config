@@ -46,3 +46,12 @@ $ git commit -m "first commit"
 ```bash
 $ git push origin main
 ```
+## 遇到的一些小问题
+error: failed to push some refs to 'github.com:MildLamb/Learn_Git_Config.git'  
+原因，我在github修改文件的同时，想要用git远程修改，导致冲突  
+解决办法：
+- 先使用命令
+```bash
+$ git pull --rebase origin main
+```
+这条指令的意思是把远程库中的更新合并到本地库中，–rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中。
